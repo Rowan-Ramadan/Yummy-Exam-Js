@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yuumy</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/font-google.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="css/output.css" />
+  </head>
+  <body class="bg-black overflow-hidden">
+    <div
+      class="loading flex z-[9999] fixed top-0 start-0 end-0 bottom-0 bg-black justify-center items-center"
+    >
+      <i class="fa-solid fa-spinner fa-spin fa-5x text-white"></i>
+    </div>
+    <div class="navbar min-h-screen flex fixed top-0 left-0 z-50">
+      <div
+        class="menu-nav flex flex-col justify-between min-h-screen p-6 bg-black"
+      >
+        <ul class="overflow-hidden pl-0 list-none">
+          <li>
+            <a
+              onclick="searchNL(); closeNav()"
+              href="#"
+              class="block py-2 relative text-white"
+              aria-current="page"
+              >Search</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="Categories(); closeNav()"
+              href="#"
+              class="block py-2 relative text-white"
+              >Categories</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="Area(); closeNav()"
+              href="#"
+              class="block py-2 relative text-white"
+              >Area</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="Ingredients(); closeNav()"
+              href="#"
+              class="block py-2 relative text-white"
+              >Ingredients</a
+            >
+          </li>
+          <li>
+            <a
+              onclick="contact(); closeNav()"
+              href="#"
+              class="block py-2 relative text-white h"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <div class="text-white">
+          <i class="fa-brands fa-facebook cursor-pointer"></i>
+          <i class="fa-brands fa-twitter cursor-pointer"></i>
+          <i class="fa-solid fa-globe cursor-pointer"></i>
+          <p class="text-white text-base">
+            Copyright Â© 2019 All Rights <span class="block">Reserved.</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="flex flex-col justify-between py-6 px-2 text-center bg-white text-black"
+      >
+        <img
+          src="./images/logo.png"
+          class="w-14 align-middle"
+          alt="yummy Logo"
+        />
+        <i class="both-nav fa-solid fa-bars fa-2x text-black cursor-pointer"></i>
+        <div class="flex flex-col gap-2">
+          <i class="fa-solid fa-globe d-block cursor-pointer"></i>
+          <i class="fa-solid fa-share-nodes cursor-pointer"></i>
+        </div>
+      </div>
+    </div>
+    <div id="search" class="container mx-auto w-3/4"></div>
+
+    <div
+      class="pt-16 max-w-screen-xl mx-auto pl-[100px] pr-[50px] xl-custom:pl-0 xl-custom:pr-0"
+    >
+      <div
+        id="Imgdata"
+        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 justify-items-center"
+      ></div>
+    </div>
+
+    <div class="container mx-auto pl-[100px] pr-[50px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 py-5"></div>
+    </div>
+
+    <div
+      class="container mx-auto  py-5 pl-[100px] pr-[50px] xl-custom:pl-0 xl-custom:pr-0"
+    >
+      <div id="rowData" class="flex justify-center"></div>
+    </div>
+
+    
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
